@@ -14,3 +14,6 @@ body {
     font: normal 100%/1.5 Helvetica, cursive, Sans-serif;
     color: #313131;
     }
+    .form-group {
+        width: 1500px;   /* Ancho del contenedor */
+    }
