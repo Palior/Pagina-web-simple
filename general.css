@@ -3,10 +3,6 @@ body {
     margin: 0;
     padding: 100px 0 0 75px;
     }
-    h1 {
-    color: black;
-    font-style: arial;
-    }
     h2 {
     color: #717171;
     }
@@ -16,4 +12,29 @@ body {
     }
     .form-group {
         width: 1500px;   /* Ancho del contenedor */
+    }
+    h1 {
+        color: #333;
+    }
+    
+    .cuadros-lista {
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0;
+        display: flex; /* Para que los cuadros se dispongan horizontalmente */
+        flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea si no caben */
+        gap: 10px; /* Espacio entre los cuadros */
+    }
+    
+    .cuadros-lista li {
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 150px; /* Ancho de cada cuadro */
+        height: 100px; /* Alto de cada cuadro */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar los cuadros */
+        border-radius: 8px; /* Bordes redondeados */
+        text-align: center;
     }
