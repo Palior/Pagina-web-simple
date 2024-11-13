@@ -18,23 +18,37 @@ body {
     }
     
     .cuadros-lista {
-        list-style-type: none; /* Elimina los puntos de la lista */
+        list-style-type: none;
         padding: 0;
-        display: flex; /* Para que los cuadros se dispongan horizontalmente */
-        flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea si no caben */
-        gap: 10px; /* Espacio entre los cuadros */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     
     .cuadros-lista li {
         background-color: white;
         border: 1px solid #ccc;
-        padding: 20px;
-        width: 150px; /* Ancho de cada cuadro */
-        height: 100px; /* Alto de cada cuadro */
+        padding: 10px;
+        width: 150px;
+        height: 200px; /* Ajusta el alto para incluir imagen y texto */
         display: flex;
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
         align-items: center;
-        justify-content: center;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar los cuadros */
-        border-radius: 8px; /* Bordes redondeados */
+        justify-content: space-between;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
         text-align: center;
+    }
+    
+    .cuadros-lista img {
+        width: 100%; /* Ajusta la imagen al ancho del cuadro */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 4px; /* Bordes redondeados en la imagen */
+        margin-bottom: 10px;
+    }
+    
+    .cuadros-lista p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
     }
