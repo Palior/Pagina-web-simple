@@ -1,8 +1,8 @@
-// Seleccionar el botón por su ID
-const boton = document.getElementById("btnCambiarFondo");
+// Selecciona el botón por su ID
+const boton = document.getElementById("btnDegradado");
 
-// Agregar un evento al botón
+// Agrega el evento de clic
 boton.addEventListener("click", () => {
-  // Cambiar el color de fondo
-  document.body.style.backgroundColor = "lightblue";
+  // Aplica el degradado al fondo del body
+  document.body.style.background = "linear-gradient(to bottom, cyan, blue)";
 });
