@@ -8,7 +8,7 @@ body {
     }
     p {
     font: normal 100%/1.5 Helvetica, cursive, Sans-serif;
-    color: #313131;
+    color: #313132;
     }
     .form-group {
         width: 1500px;   /* Ancho del contenedor del form*/
@@ -23,6 +23,8 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        border-color: aqua;
+        border-width: 4;
     }
     
     .cuadros-lista li {
